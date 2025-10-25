@@ -1,6 +1,0 @@
-Drop Table HAD;
-Drop Table OWNS;
-Drop Table Accident;
-Drop Table POLICY;
-Drop Table CAR;
-Drop Table CUSTOMER;

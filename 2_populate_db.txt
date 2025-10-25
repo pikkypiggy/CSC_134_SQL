@@ -1,0 +1,17 @@
+insert into POLICY (PolicyNo, Policy_Rate, Policy_Details) values (10, 200.03, 'Theft Protection');
+
+insert into POLICY (PolicyNo, Policy_Rate, Policy_Details) values (18, 567.45, 'Comprehensive Coverage');
+
+insert into CUSTOMER (SSN, Customer_name, Street, City, State, Zip, Phone) values (123456789, 'Kathleen', '2 South St', 'Sacramento', 'California', '95757', '9161111111');
+
+insert into CAR (License, Model, year, PolicyNo_Ref) values ('ABC123', 'Subaru BRZ', 2013, 777);
+
+insert into OWNS (SSN, License) values (123456789, 'ABC123');
+
+insert into Accident (Accident_No, Driver_Name, Accident_Date, Amount_of_Damage, Accident_Details) values (1, 'Matt Snyder', '2005-05-05', 400.02, 'T-Boned at an intersection');
+
+insert into HAD (License, AccidentNo) values ('ABC123', 1);
+
+delete from POLICY where PolicyNo = 100;
+
+update CAR set year=2015 where License='ABC123';
